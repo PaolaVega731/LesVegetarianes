@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*html cocina vegetariana*/
+li.active {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.sectionHome {
+    width: 100%;
+    text-align: center;
+}
+
+.textInfo {
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+}
+
+.textareaMsg {
+    margin-top: 40px;
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.btn-submit {
+    display: block;
+    height: 40px;
+    margin: 10px auto;
+    padding: 10px 20px;  
+    background-color: rgb(243, 211, 172);
+    border-radius: 4px;
+}
+.btn-submit:hover{
+    background-color: rgba(243, 211, 172, 0.732);
+    cursor: pointer;
+    
+}
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.redes-sociales li a i {
+    margin: 2px;
+}
+
+footer {
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.sectionHome2 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tituloprincipal {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.contenedorTitle {
+    text-align: center;
+}
+
+.contenedorTitle>* {
+    display: inline-block;
+    margin: 20px;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    display: block;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+nav {
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+nav ul {
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    float: right;
+    /*sacar float*/
+    width: 150px;
+    height: 150px;
+    border-width: 10px;
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.fotoprincipal {
+    width: 100%;
+}
+
+.fondo {
+    background-color: rgb(232, 232, 170);
+}
+
+.reseña {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* html 1 recetas*/
+.tipografia {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: brown;
+    margin-bottom: 90px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.colorfondo {
+    background-color: rgb(232, 232, 170);
+}
+
+.contenedorRecetas {
+    width: 100%;
+    display: flex;
+    padding-left: 200px;
+}
+.box2{
+    margin-right: 10px;
+    margin-left: 70px;
+    
+}
+
+.foto {
+    
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+}
+img{
+    border-radius: 10px;
+}
+#receta1 {
+    width: 300px;
+}
+.box1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px ;
+    color: black;
+}
+.box3{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* html 2 beneficios*/
+.subtitulo1{
+    font-size: 25px;
+}
+.tituloBolsa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bolsaconcara {
+    width: 250px;
+    height: 250px;
+}
+.color {
+    background-color: rgb(232, 232, 170);
+}
+.beneficios {
+     
+    font-size: 40px;
+    color: brown;
+}
+.boxBeneficios {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*html 3 alimentos que no pueden faltar*/
+
+.fondocolor {
+    background-color: rgb(232, 232, 170);
+}
+
+.noPuedeFaltar {
+    text-align: left;
+    font-size: 130%;
+}
+
+.titleAlimentos {
+    color: brown;
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+.frutosSecos {
+    width: 50%;
+    margin-top: 30px;
+}
+
+/*html 4 alimentos y sus propiedades*/
+
+.cuartocolor {
+    background-color: rgb(232, 232, 170);
+}
+
+.medio {
+    text-align: center;
+    color: brown;
+    font-size: 230%;
+}
+
+.gridcontenedorfotos {
+    
+     display: grid;
+     grid-template-columns: 33% 33% 33%;   
+
+}
+ .foto1{
+    width: 400px;
+    height: 400px;
+    padding-top: 80px;
+    margin-left: 60px;
+    
+ }
+   .foto2{
+    width: 400px;
+    height: 400px;
+    padding-top: 80px;
+    margin-left: 40px;
+    
+   }
+   .foto3{
+    width: 400px;
+    height: 400px;
+    padding-top: 80px;
+    margin-left: 20px;
+    
+   }
+   
+
+
+/* html tablet 768px*/
+
+@media screen and (max-width: 768px) {
+
+    /*html*/
+    .logo {
+        width: 110px;
+        height: 110px;
+        border-width: 20px;
+        margin-left: 500px;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+
+    .contenedorTitle {
+        position: relative;
+    }
+
+    .fotoPrincipalBox {
+        width: 110%;
+    }
+
+    header {
+        background-color: rgb(164, 164, 186);
+        padding: 60px;
+
+    }
+      /*html1*/
+    .sopaContenedor {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    .box2 {
+        font-size: small;  
+        padding-left: 0px;
+        margin-right: 120px;  
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        margin-right:20px;
+    }
+    .box1{
+        margin-top: 10px;
+    }
+    .box3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .footer1 {
+        text-align: center;
+    
+    }
+    #receta1{
+        width:800px;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+    .contenedorRecetas{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        font-size: 15px;
+        
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul {
+        margin-right: 100px;
+        height: 80%;
+    }
+     
+    /*html2 arreglar todo*/
+
+    /*html3* arreglar todo/
+
+    /*html4* arreglar todo/
+}
+
+/*cel 500px*/
+
+@media screen and (max-width:500px) {
+    /*html*/
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-width: 15px;
+    }
+
+    .fotoPrincipalBox {
+        width: 100%;
+    }
+
+    .tituloprincipal {
+        font-size: 45px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    header {
+        background-color: rgb(17, 188, 131);
+        padding: 50px;
+    }
+    .textareaMsg {
+        margin-top: 20px;
+        height: 80px;
+        font-size: 15px;
+    }
+    
+    .tipografia{
+        margin-bottom: 20px;
+        margin-left:40px;
+
+    }
+    nav ul{
+        margin-right: 90px;
+        display: inline-flex;
+    }
+    nav li{
+        margin: 20px 20px; 
+    }
+    
+    .foto{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /*html1 arreglar header*/
+    
+
+
+    /*html2 arregalr header */
+    .tituloBolsa{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    /*html3 arreglar header*/
+
+    /*html4 arreglar todo*/
+}
