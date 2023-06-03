@@ -4,16 +4,12 @@
 }
 
 /*html cocina vegetariana*/
-li.active {
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-}
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
+    background-color: rgb(232, 232, 170);
 }
 
 .sectionHome {
@@ -42,15 +38,17 @@ textarea {
     display: block;
     height: 40px;
     margin: 10px auto;
-    padding: 10px 20px;  
+    padding: 10px 20px;
     background-color: rgb(243, 211, 172);
     border-radius: 4px;
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
     background-color: rgba(243, 211, 172, 0.732);
     cursor: pointer;
-    
+
 }
+
 .redes-sociales {
     list-style-type: none;
     padding: 0;
@@ -120,20 +118,6 @@ header {
     margin-bottom: 40px;
 }
 
-nav {
-    text-align: center;
-
-}
-
-nav li {
-    display: inline-block;
-    margin: 10px 10px;
-}
-
-nav ul {
-    margin: 0;
-    height: 100%;
-}
 
 a {
     text-decoration: none;
@@ -152,10 +136,6 @@ a {
 
 .fotoprincipal {
     width: 100%;
-}
-
-.fondo {
-    background-color: rgb(232, 232, 170);
 }
 
 .reseña {
@@ -182,70 +162,72 @@ a {
 .contenedorRecetas {
     width: 100%;
     display: flex;
-    padding-left: 200px;
+    margin-left: 200px;
 }
-.box2{
+
+.box2 {
     margin-right: 10px;
     margin-left: 70px;
-    
+
 }
 
 .foto {
-    
+
     width: 300px;
     height: 250px;
     margin-top: 20px;
 }
-img{
+
+img {
     border-radius: 10px;
 }
+
 #receta1 {
     width: 300px;
 }
-.box1{
+
+.box1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px ;
+    font-size: 20px;
     color: black;
 }
-.box3{
+
+.box3 {
     font-size: 20px;
     text-align: center;
 }
 
 /* html 2 beneficios*/
-.subtitulo1{
+.subtitulo1 {
     font-size: 25px;
 }
-.tituloBolsa{
+
+.tituloBolsa {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 .bolsaconcara {
     width: 250px;
     height: 250px;
 }
-.color {
-    background-color: rgb(232, 232, 170);
-}
+
 .beneficios {
-     
+
     font-size: 40px;
     color: brown;
 }
+
 .boxBeneficios {
     margin-left: 10%;
     margin-right: 10%;
 }
 
 /*html 3 alimentos que no pueden faltar*/
-
-.fondocolor {
-    background-color: rgb(232, 232, 170);
-}
 
 .noPuedeFaltar {
     text-align: left;
@@ -262,47 +244,54 @@ img{
     width: 50%;
     margin-top: 30px;
 }
+.fontHeader{
+    font-size: 18px;
+}
 
 /*html 4 alimentos y sus propiedades*/
 
-.cuartocolor {
-    background-color: rgb(232, 232, 170);
+.paginaGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-template-areas:"header header header"
+    "titulo titulo titulo"
+    "imagen imagen imagen"
+    "footer footer footer";
+    
+}
+.headerGrid{
+    grid-area: header;
+    
 }
 
-.medio {
+
+.titulo4 {
+    grid-area: titulo;
     text-align: center;
     color: brown;
     font-size: 230%;
+    margin-bottom: 40px;
 }
 
-.gridcontenedorfotos {
+.imagenGrid {
+    grid-area: imagen;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     
-     display: grid;
-     grid-template-columns: 33% 33% 33%;   
-
 }
- .foto1{
+
+.imagenPropiedades{
     width: 400px;
     height: 400px;
-    padding-top: 80px;
-    margin-left: 60px;
-    
- }
-   .foto2{
-    width: 400px;
-    height: 400px;
-    padding-top: 80px;
-    margin-left: 40px;
-    
-   }
-   .foto3{
-    width: 400px;
-    height: 400px;
-    padding-top: 80px;
-    margin-left: 20px;
-    
-   }
-   
+}
+
+.footerGrid{
+    margin-top: 70px;
+    grid-area: footer;
+}
+
 
 
 /* html tablet 768px*/
@@ -328,132 +317,136 @@ img{
         width: 110%;
     }
 
-    header {
-        background-color: rgb(164, 164, 186);
-        padding: 60px;
 
-    }
-      /*html1*/
+    /*html1*/
     .sopaContenedor {
         margin-right: 5px;
         margin-left: 0;
     }
+
     .box2 {
-        font-size: small;  
+        font-size: small;
         padding-left: 0px;
-        margin-right: 120px;  
     }
-    .foto{
+
+    .foto {
         display: flex;
         justify-content: center;
-        margin-right:20px;
+        margin-right: 20px;
     }
-    .box1{
+
+    .box1 {
         margin-top: 10px;
     }
-    .box3{
+
+    .box3 {
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: center;
     }
-    
+
     .footer1 {
         text-align: center;
-    
+
     }
-    #receta1{
-        width:800px;
+
+    #receta1 {
+        width: 500px;
         display: flex;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
     }
-    .contenedorRecetas{
+
+    .contenedorRecetas {
         padding: 0;
         flex-direction: column;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
         font-size: 15px;
-        
+
     }
+
     section {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    nav ul {
-        margin-right: 100px;
-        height: 80%;
+    .tipografia{
+        margin-bottom: 20px;
     }
-     
-    /*html2 arreglar todo*/
 
-    /*html3* arreglar todo/
+    /*html3*/
+    .frutosSecos{
+        width: 350px;
+    }
 
-    /*html4* arreglar todo/
+    /*html4*/
+       
+    .imagenGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
 }
 
 /*cel 500px*/
 
-@media screen and (max-width:500px) {
-    /*html*/
+    @media screen and (max-width:500px) {
+        /*html*/
 
-    .logo {
-        width: 80px;
-        height: 80px;
-        border-width: 15px;
-    }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-width: 15px;
+        }
 
-    .fotoPrincipalBox {
-        width: 100%;
-    }
+        .fotoPrincipalBox {
+            width: 100%;
+        }
 
-    .tituloprincipal {
-        font-size: 45px;
-    }
+        .tituloprincipal {
+            font-size: 45px;
+        }
 
-    .subtitulo {
-        font-size: 30px;
-    }
+        .subtitulo {
+            font-size: 30px;
+        }
+ 
+        .textareaMsg {
+            margin-top: 20px;
+            height: 80px;
+            font-size: 15px;
+        }
 
-    header {
-        background-color: rgb(17, 188, 131);
-        padding: 50px;
-    }
-    .textareaMsg {
-        margin-top: 20px;
-        height: 80px;
-        font-size: 15px;
-    }
+        .tipografia {
+            margin-bottom: 20px;
+            margin-left: 40px;
+
+        }
+        .foto {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /*html1 */
+        header{
+            height: 80px;
+        }
+        #receta1 {
+            width: 300px;
+            
+        }
     
-    .tipografia{
-        margin-bottom: 20px;
-        margin-left:40px;
+        /*html2*/
+        .tituloBolsa {
+            flex-direction: column-reverse;
+            margin-bottom: 40px;
+        }
 
-    }
-    nav ul{
-        margin-right: 90px;
-        display: inline-flex;
-    }
-    nav li{
-        margin: 20px 20px; 
-    }
-    
-    .foto{
-        display: flex;
-        justify-content: flex-start;
-    }
+        /*html3*/
+        .frutosSecos{
+            width: 250px;
+        }
 
-    /*html1 arreglar header*/
-    
-
-
-    /*html2 arregalr header */
-    .tituloBolsa{
-        flex-direction: column-reverse;
-        margin-bottom: 40px;
+        
     }
-    /*html3 arreglar header*/
-
-    /*html4 arreglar todo*/
-}
