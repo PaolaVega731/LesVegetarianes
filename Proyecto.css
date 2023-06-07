@@ -162,7 +162,14 @@ a {
 .contenedorRecetas {
     width: 100%;
     display: flex;
-    margin-left: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.sopaContenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
 }
 
 .box2 {
@@ -183,7 +190,7 @@ img {
 }
 
 #receta1 {
-    width: 300px;
+    width: auto;
 }
 
 .box1 {
@@ -351,7 +358,6 @@ img {
     }
 
     #receta1 {
-        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -433,14 +439,30 @@ img {
             height: 80px;
         }
         #receta1 {
-            width: 300px;
-            
+            width:100%;
+            margin: 0 auto;  
         }
-    
+        .contenedorRecetas{
+            margin: 0 auto;
+        }
+        .tipografia{
+            margin: 0 auto;
+        }
+        .box2{
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        
+
         /*html2*/
         .tituloBolsa {
             flex-direction: column-reverse;
             margin-bottom: 40px;
+        }
+        .beneficios{
+            font-size: 30px;
         }
 
         /*html3*/
