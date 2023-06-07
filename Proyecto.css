@@ -419,9 +419,11 @@ img {
         }
  
         .textareaMsg {
-            margin-top: 20px;
-            height: 80px;
-            font-size: 15px;
+            width: 0 auto;
+
+        }
+        textarea{
+            width: 100%;
         }
 
         .tipografia {
