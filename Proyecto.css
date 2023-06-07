@@ -471,6 +471,17 @@ img {
         .frutosSecos{
             width: 250px;
         }
+        .sectionHome2{
+            width: 300px;
+        }
+         /*html4*/
+         
+         .imagenPropiedades{
+            width: 100%;
+         }
+         .imagenGrid{
+            padding: 10px;
+         }
 
         
     }
