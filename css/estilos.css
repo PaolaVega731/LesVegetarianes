@@ -4,6 +4,50 @@
   padding: 0;
 }
 
+.foto {
+  border-style: double;
+}
+
+.imagenPropiedades {
+  border-style: double;
+  color: black;
+}
+
+.fotoPrincipalBox {
+  border-style: double;
+  color: black;
+}
+
+.frutosSecos {
+  border-style: double;
+  color: black;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  40% {
+    transform: translateX(40px);
+  }
+  60% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.logo {
+  animation-name: movimiento;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
 /* html cocina vegetariana */
 body {
   margin: 0;
@@ -11,22 +55,13 @@ body {
   font-family: "Merriweather", serif;
   background-color: rgb(232, 232, 170);
 }
-body header {
+
+header {
   background-color: aliceblue;
   width: 100%;
   display: block;
   height: 50px;
   margin-bottom: 40px;
-}
-
-.sectionHome {
-  width: 100%;
-  text-align: center;
-}
-.sectionHome .sectionHome2 {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .textInfo {
@@ -83,10 +118,26 @@ footer .redes-sociales li a i {
   margin: 2px;
 }
 
-.contenedorTitle {
+.sectionHome {
+  width: 100%;
   text-align: center;
 }
-.contenedorTitle .tituloprincipal {
+.sectionHome .sectionHome2 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectionHome .sectionHome2 .contenedorTitle {
+  text-align: center;
+}
+.sectionHome .sectionHome2 .contenedorTitle .contenedorHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+.sectionHome .sectionHome2 .contenedorTitle .contenedorHome .ContenedorTextoHome .tituloprincipal {
   font-size: 60px;
   font-weight: bold;
   font-style: italic;
@@ -96,13 +147,20 @@ footer .redes-sociales li a i {
   margin-bottom: 4px;
   padding-bottom: 4px;
 }
-.contenedorTitle .subtitulo {
+.sectionHome .sectionHome2 .contenedorTitle .contenedorHome .ContenedorTextoHome .subtitulo {
   text-align: center;
   font-size: 30px;
   margin-top: 0%;
   padding-top: 0%;
 }
-.contenedorTitle .contenedorTitle > * {
+.sectionHome .sectionHome2 .contenedorTitle .contenedorHome .logo {
+  width: 150px;
+  height: 150px;
+  border-width: 10px;
+  flex-direction: column-reverse;
+  display: flex;
+}
+.sectionHome .sectionHome2 .contenedorTitle .contenedorTitle > * {
   display: inline-block;
   margin: 20px;
 }
@@ -112,18 +170,9 @@ a {
   color: black;
 }
 
-.logo {
-  float: right;
-  /*sacar float*/
-  width: 150px;
-  height: 150px;
-  border-width: 10px;
-  flex-direction: column-reverse;
-  display: flex;
-}
-
-.fotoprincipal {
-  width: 100%;
+.fotoPrincipalBox {
+  width: 90%;
+  border-radius: 10px;
 }
 
 .reseña {
@@ -186,6 +235,13 @@ a {
   margin-top: 20px;
 }
 
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
 /* html 2 beneficios*/
 .tituloBolsa {
   display: flex;
@@ -216,7 +272,8 @@ a {
   margin-bottom: 10%;
   font-size: 30px;
 }
-.titleAlimentos .noPuedeFaltar {
+
+.noPuedeFaltar {
   text-align: left;
   font-size: 130%;
 }
@@ -224,6 +281,7 @@ a {
 .frutosSecos {
   width: 50%;
   margin-top: 30px;
+  border-radius: 10px;
 }
 
 .fontHeader {
@@ -244,8 +302,9 @@ a {
   grid-area: titulo;
   text-align: center;
   color: brown;
-  font-size: 230%;
-  margin-bottom: 40px;
+  font-size: 300%;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
 
 .imagenGrid {
@@ -255,13 +314,15 @@ a {
   justify-items: center;
 }
 .imagenGrid .imagenPropiedades {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
 }
 
 .footerGrid {
-  margin-top: 70px;
+  margin-top: 80px;
   grid-area: footer;
+  font-size: 20px;
 }
 
 /* html tablet 768px*/
@@ -271,16 +332,15 @@ a {
     width: 110px;
     height: 110px;
     border-width: 20px;
-    margin-left: 500px;
-    position: absolute;
-    right: 0;
-    top: 0px;
-  }
-  .contenedorTitle {
-    position: relative;
   }
   .fotoPrincipalBox {
-    width: 110%;
+    width: 100%;
+  }
+  .contenidoHome {
+    padding: 20px;
+  }
+  .contenidoHome .textInfo {
+    padding: 20px;
   }
   /*html1 y 5*/
   .sopaContenedor {
@@ -346,6 +406,9 @@ a {
     height: 80px;
     border-width: 15px;
   }
+  .contenedorHome {
+    flex-direction: column;
+  }
   .fotoPrincipalBox {
     width: 100%;
   }
@@ -385,6 +448,13 @@ a {
     margin: 0 auto;
     padding: 20px;
   }
+  #receta1 .box2 .description {
+    margin-right: 40px;
+  }
+  .videos {
+    width: 250px;
+    margin-left: 10px;
+  }
   .tipografia {
     margin: 0 auto;
   }
@@ -404,11 +474,11 @@ a {
     width: 300px;
   }
   /*html4*/
-  .imagenPropiedades {
-    width: 100%;
+  .imagenGrid {
+    padding: 5px;
   }
-  .imagenPropiedades .imagenGrid {
-    padding: 10px;
+  .imagenGrid .imagenPropiedades {
+    width: 100%;
   }
 }
 

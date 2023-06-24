@@ -4,6 +4,49 @@
 }
 
 @import "variables";
+ 
+.foto{
+    @extend.foto;
+    border-style: double;
+ }
+@mixin grid-propiedades{
+    border-style: double;
+    color: black;
+}
+.imagenPropiedades{
+    @include grid-propiedades;
+}
+.fotoPrincipalBox{
+    @include grid-propiedades;
+}
+.frutosSecos{
+    @include grid-propiedades;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(20px);
+    }
+    40%{
+        transform: translateX(40px);
+    }
+    60%{
+        transform: translateX(60px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.logo{
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
 
 /* html cocina vegetariana */
 
@@ -11,24 +54,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
-    background-color: rgb(232, 232, 170);
-    header {
-        background-color: aliceblue;
-        width: 100%;
-        display: block;
-        height: 50px;
-        margin-bottom: 40px;
-    }
+    background-color: $colorFondoPrincipal;
     
 }
-.sectionHome {
+header {
+    background-color: aliceblue;
     width: 100%;
-    text-align: center;
-    .sectionHome2 {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    display: block;
+    height: 50px;
+    margin-bottom: 40px;
 }
 .textInfo {
     text-align: left;
@@ -85,48 +119,65 @@ footer {
     }
 }
 
-.contenedorTitle {
+.sectionHome {
+    width: 100%;
     text-align: center;
-    .tituloprincipal {
-        font-size: 60px;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-        background-position: center;
-        display: flex;
-        margin-bottom: 4px;
-        padding-bottom: 4px;
-    }
-    .subtitulo {
-        text-align: center;
-        font-size: 30px;
-        margin-top: 0%;
-        padding-top: 0%;
-    }
-    .contenedorTitle>* {
-        display: inline-block;
-        margin: 20px;
+    .sectionHome2 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        .contenedorTitle {
+            text-align: center;
+             .contenedorHome{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;   
+                gap: 10px;
+                .ContenedorTextoHome{
+                    .tituloprincipal {
+                    font-size: 60px;
+                    font-weight: bold;
+                    font-style: italic;
+                    text-align: center;
+                    background-position: center;
+                        display: flex;
+                        margin-bottom: 4px;
+                        padding-bottom: 4px;
+                    }
+                    .subtitulo {
+                        text-align: center;
+                        font-size: 30px;
+                        margin-top: 0%;
+                        padding-top: 0%;
+                    }
+                }
+                .logo {
+                  
+                    width: 150px;
+                    height: 150px;
+                    border-width: 10px;
+                    flex-direction: column-reverse;
+                    display: flex;
+                }
+            }
+            .contenedorTitle>* {
+                display: inline-block;
+                margin: 20px;
+            }
+        }
+    
     }
 }
-
 
 a {
     text-decoration: none;
     color: black;
 }
 
-.logo {
-    float: right;
-    /*sacar float*/
-    width: 150px;
-    height: 150px;
-    border-width: 10px;
-    flex-direction: column-reverse;
-    display: flex;
-}
-
-.fotoprincipal {
-    width: 100%;
+.fotoPrincipalBox {
+    width: 90%;
+    border-radius: 10px;
 }
 
 .reseña {
@@ -175,6 +226,7 @@ a {
             .box2 {
                 margin-right: 10px;
                 margin-left: 70px;
+
             }
             img {
                 border-radius: 10px;
@@ -189,7 +241,13 @@ a {
 
     }
 }
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
 
+}
 /* html 2 beneficios*/
 
 .tituloBolsa {
@@ -222,14 +280,16 @@ a {
     color: brown;
     margin-bottom: 10%;
     font-size: 30px;
-    .noPuedeFaltar {
-        text-align: left;
-        font-size: 130%;
-    }
+    
+}
+.noPuedeFaltar {
+    text-align: left;
+    font-size: 130%;
 }
 .frutosSecos {
     width: 50%;
     margin-top: 30px;
+    border-radius: 10px;
 }
 .fontHeader{
     font-size: 18px;
@@ -239,22 +299,22 @@ a {
 .paginaGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     grid-template-areas:"header header header"
     "titulo titulo titulo"
     "imagen imagen imagen"
     "footer footer footer";
     .headerGrid{
-        grid-area: header;
-        
-    }    
+        grid-area: header; 
+    }
 }
+
 .titulo4 {
     grid-area: titulo;
     text-align: center;
     color: brown;
-    font-size: 230%;
-    margin-bottom: 40px;
+    font-size: 300%;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
 .imagenGrid {
@@ -263,14 +323,16 @@ a {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     .imagenPropiedades{
-        width: 400px;
-        height: 400px;
+        width: 600px;
+        height: 600px;
+        border-radius: 20px;
     }
     
 }
 .footerGrid{
-    margin-top: 70px;
+    margin-top: 80px;
     grid-area: footer;
+    font-size: 20px;
 }
 
 /* html tablet 768px*/
@@ -278,24 +340,26 @@ a {
 @media screen and (max-width: 768px) {
 
     /*html*/
+
+
     .logo {
         width: 110px;
         height: 110px;
         border-width: 20px;
-        margin-left: 500px;
-        position: absolute;
-        right: 0;
-        top: 0px;
-    }
+        
 
-    .contenedorTitle {
-        position: relative;
-    }
+    } 
 
     .fotoPrincipalBox {
-        width: 110%;
+        width: 100%;
     }
-
+    .contenidoHome{
+        padding: 20px;
+        
+        .textInfo{
+            padding: 20px;
+        }
+    }
 
     /*html1 y 5*/
     .sopaContenedor {
@@ -375,6 +439,9 @@ a {
             border-width: 15px;
         }
 
+        .contenedorHome{
+            flex-direction: column;
+        }
         .fotoPrincipalBox {
             width: 100%;
         }
@@ -419,9 +486,18 @@ a {
                 width: 100%;
                 margin: 0 auto;
                 padding: 20px;
+             .description{
+                margin-right: 40px;
+
+                }
             }
             
         }
+        .videos{
+            width: 250px;
+            margin-left: 10px;
+        }
+        
         
         .tipografia{
             margin: 0 auto;
@@ -445,14 +521,10 @@ a {
             width: 300px;
         }
          /*html4*/
-         
-         .imagenPropiedades{
-            width: 100%;
-            .imagenGrid{
-                padding: 10px;
-             }
-         }
-         
-
-        
-    }
+         .imagenGrid{
+            padding: 5px;
+            .imagenPropiedades{
+                width: 100%;  
+             } 
+            }
+        }
