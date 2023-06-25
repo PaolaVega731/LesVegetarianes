@@ -396,6 +396,7 @@ a {
   .imagenGrid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
+    margin: 60px;
   }
 }
 /*cel 500px*/
@@ -475,10 +476,9 @@ a {
   }
   /*html4*/
   .imagenGrid {
-    padding: 5px;
-  }
-  .imagenGrid .imagenPropiedades {
-    width: 100%;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 10px;
+    margin: 10px;
   }
 }
 
