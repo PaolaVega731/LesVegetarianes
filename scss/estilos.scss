@@ -305,6 +305,8 @@ a {
     "footer footer footer";
     .headerGrid{
         grid-area: header; 
+        font-size: 28px;
+        padding-bottom: 60px;
     }
 }
 
@@ -317,8 +319,7 @@ a {
     margin-top: 50px;
 }
 
-.imagenGrid {
-    grid-area: imagen;
+.grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -326,14 +327,12 @@ a {
         width: 600px;
         height: 600px;
         border-radius: 20px;
-    
-    }
-    
+    }   
 }
 .footerGrid{
     margin-top: 80px;
     grid-area: footer;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* html tablet 768px*/
@@ -419,13 +418,32 @@ a {
     }
 
     /*html4*/
-       
-    .imagenGrid{
+    .paginaGrid{
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        margin: 60px;
+        grid-template-areas: "header"  "titulo" "imagen" "footer";
+        .headerGrid{
+            font-size: 20px;
+        }
+    }
+    .titulo4{
+        font-size: 200%;
+        margin-bottom: 50px;
+        margin-top: 40px;   
+    }
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    
+        .imagenPropiedades{
+            width: 400px;
+            height: 400px;  
     }
 }
+    .footerGrid{
+      font-size: 18px;
+      margin-top: 40px; 
+}
+    
+    }
 
 /*cel 500px*/
 
@@ -520,9 +538,33 @@ a {
             width: 300px;
         }
          /*html4*/
-         .imagenGrid{
-            grid-template-columns: repeat(1fr);
-            grid-gap: 10px;
-            margin: 10px;
+        
+         .paginaGrid{
+            grid-template-columns: 1fr;
+            grid-template-areas: "header" "titulo" "imagen" "footer"; 
+            .headerGrid{
+                font-size: 18px;
+            }
+         }
+            .titulo4{
+                font-size: 180%;
+                margin-bottom: 40px;
+                margin-top: 30px;
+         }
+         .grid-container{
+            grid-template-columns: 1fr;
+            .imagenPropiedades{
+             width: 300px;
+             height: 300px;
+            }
+            
+         }
+         .footerGrid{
+            font-size: 18px;
         }
-        }
+
+
+
+         }
+
+        
