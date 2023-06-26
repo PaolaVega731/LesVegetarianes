@@ -507,11 +507,11 @@ a {
     margin-top: 30px;
   }
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1, 1fr;
   }
   .grid-container .imagenPropiedades {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
   .footerGrid {
     font-size: 18px;
