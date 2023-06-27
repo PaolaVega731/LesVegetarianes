@@ -306,8 +306,9 @@ a {
 
     .headerGrid {
         grid-area: header;
-        font-size: 28px;
+        font-size: 25px;
         padding-bottom: 60px;
+       
     }
 
 
@@ -315,7 +316,7 @@ a {
         grid-area: titulo;
         text-align: center;
         color: brown;
-        font-size: 300%;
+        font-size: 2500%;
         margin-bottom: 80px;
         margin-top: 50px;
     }
@@ -333,7 +334,7 @@ a {
     .footerGrid {
         margin-top: 80px;
         grid-area: footer;
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -426,17 +427,14 @@ a {
     }
     
     .paginaGrid.headerGrid{ 
-        font-size: 20px;
+        font-size: 15px;
     }
     .titulo4 {
-        grid-area: titulo;
-        color: brown;
-        font-size: 200%;
+        font-size: 180%;
         margin-bottom: 50px;
         margin-top: 40px;
     }
     .grid-container{
-        grid-area:imagen;
         width: 400px;
         margin: 0 auto;
         .espaciogap{
@@ -445,7 +443,6 @@ a {
     }
     
     .footerGrid{
-        grid-area: footer;
         font-size:18px;
         margin-top: 40px;
     }
@@ -548,10 +545,11 @@ a {
          .paginaGrid{
             grid-template-columns: 1fr;
             grid-template-areas: "header" "titulo" "imagen" "footer"; 
-            .headerGrid{
-                font-size: 18px;
-            }
+            
          }
+         .paginaGrid.headerGrid{
+            font-size: 18px;
+        }
             .titulo4{
                 font-size: 180%;
                 margin-bottom: 40px;
@@ -559,17 +557,14 @@ a {
          }
          .grid-container{
             grid-template-columns: 1, 1fr;
-            .imagenPropiedades{
-             width: 250px;
-             height: 250px;
-            }
-            
          }
+         .grid-container.imagenPropiedades{
+            width: 300px;
+            height: 300px;
+           }
          .footerGrid{
             font-size: 18px;
         }
-
-
 
          }
 
