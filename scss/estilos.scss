@@ -544,10 +544,11 @@ a {
          .paginaGrid{
             grid-template-columns: 1fr;
             grid-template-areas: "header" "titulo" "imagen" "footer"; 
-            
+            .headerGrid{
+                font-size: 18px;
+                padding-bottom: 40px;  
          }
-         .paginaGrid.headerGrid{
-            font-size: 18px;
+         
         }
             .titulo4{
                 font-size: 180%;

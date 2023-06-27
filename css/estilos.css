@@ -493,8 +493,9 @@ a {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "titulo" "imagen" "footer";
   }
-  .paginaGrid.headerGrid {
+  .paginaGrid .headerGrid {
     font-size: 18px;
+    padding-bottom: 40px;
   }
   .titulo4 {
     font-size: 180%;
