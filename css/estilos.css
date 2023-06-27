@@ -296,14 +296,14 @@ a {
 }
 .paginaGrid .headerGrid {
   grid-area: header;
-  font-size: 25px;
+  font-size: 28px;
   padding-bottom: 60px;
 }
 .paginaGrid .titulo4 {
   grid-area: titulo;
   text-align: center;
   color: brown;
-  font-size: 50px;
+  font-size: 300%;
   margin-bottom: 80px;
   margin-top: 50px;
 }
@@ -318,7 +318,7 @@ a {
 .paginaGrid .footerGrid {
   margin-top: 80px;
   grid-area: footer;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* html tablet 768px*/
@@ -397,7 +397,7 @@ a {
     font-size: 20px;
   }
   .titulo4 {
-    font-size: 50px;
+    font-size: 200%;
     margin-bottom: 50px;
     margin-top: 40px;
   }
@@ -497,7 +497,7 @@ a {
     font-size: 18px;
   }
   .titulo4 {
-    font-size: 50px;
+    font-size: 180%;
     margin-bottom: 40px;
     margin-top: 30px;
   }
