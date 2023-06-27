@@ -291,16 +291,15 @@ a {
 /*html 4 alimentos y sus propiedades*/
 .paginaGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "titulo titulo titulo" "imagen imagen imagen" "footer footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "titulo" "imagen" "footer";
 }
 .paginaGrid .headerGrid {
   grid-area: header;
   font-size: 28px;
   padding-bottom: 60px;
 }
-
-.titulo4 {
+.paginaGrid .titulo4 {
   grid-area: titulo;
   text-align: center;
   color: brown;
@@ -308,19 +307,15 @@ a {
   margin-bottom: 80px;
   margin-top: 50px;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+.paginaGrid .grid-container {
+  grid-area: imagen;
 }
-.grid-container .imagenPropiedades {
-  width: 600px;
-  height: 600px;
+.paginaGrid .grid-container .imagenPropiedades {
+  width: 400px;
+  height: 400px;
   border-radius: 20px;
 }
-
-.footerGrid {
+.paginaGrid .footerGrid {
   margin-top: 80px;
   grid-area: footer;
   font-size: 25px;
@@ -395,25 +390,29 @@ a {
   }
   /*html4*/
   .paginaGrid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-template-areas: "header" "titulo" "imagen" "footer";
   }
-  .paginaGrid .headerGrid {
+  .paginaGrid.headerGrid {
     font-size: 20px;
   }
   .titulo4 {
+    grid-area: titulo;
+    color: brown;
     font-size: 200%;
     margin-bottom: 50px;
     margin-top: 40px;
   }
   .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .grid-container .imagenPropiedades {
+    grid-area: imagen;
     width: 400px;
-    height: 400px;
+    margin: 0 auto;
+  }
+  .grid-container .espaciogap {
+    gap: 20px;
   }
   .footerGrid {
+    grid-area: footer;
     font-size: 18px;
     margin-top: 40px;
   }
