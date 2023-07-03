@@ -255,51 +255,6 @@ img {
     font-size: 18px;
 }
 
-/*html 4 alimentos y sus propiedades*/
-
-.paginaGrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    grid-template-areas:"header header header"
-    "titulo titulo titulo"
-    "imagen imagen imagen"
-    "footer footer footer";
-    
-}
-.headerGrid{
-    grid-area: header;
-    
-}
-
-
-.titulo4 {
-    grid-area: titulo;
-    text-align: center;
-    color: brown;
-    font-size: 230%;
-    margin-bottom: 40px;
-}
-
-.imagenGrid {
-    grid-area: imagen;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    
-}
-
-.imagenPropiedades{
-    width: 400px;
-    height: 400px;
-}
-
-.footerGrid{
-    margin-top: 70px;
-    grid-area: footer;
-}
-
-
 
 /* html tablet 768px*/
 
@@ -387,13 +342,7 @@ img {
         width: 350px;
     }
 
-    /*html4*/
-       
-    .imagenGrid{
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-}
+   }
 
 /*cel 500px*/
 
@@ -474,14 +423,7 @@ img {
         .sectionHome2{
             width: 300px;
         }
-         /*html4*/
-         
-         .imagenPropiedades{
-            width: 100%;
-         }
-         .imagenGrid{
-            padding: 10px;
-         }
+       
 
         
     }
