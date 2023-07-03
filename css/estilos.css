@@ -183,7 +183,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* html 1 y 5 recetas*/
+/* html 1 y 4 recetas*/
 .tipografia {
   font-family: "Merriweather", serif;
   text-align: center;
@@ -289,20 +289,6 @@ a {
   font-size: 18px;
 }
 
-/*html 4 alimentos y sus propiedades*/
-.titulo4 {
-  text-align: center;
-  color: brown;
-  font-size: 800%;
-  margin-bottom: 80px;
-  margin-top: 50px;
-}
-
-.imagenPropiedades {
-  display: inline-block;
-  width: 33.33%;
-}
-
 /* html tablet 768px*/
 @media screen and (max-width: 768px) {
   /*html*/
@@ -320,7 +306,7 @@ a {
   .contenidoHome .textInfo {
     padding: 20px;
   }
-  /*html1 y 5*/
+  /*html1 y 4*/
   .sopaContenedor {
     margin-right: 5px;
     margin-left: 0;
@@ -371,20 +357,6 @@ a {
     width: 350px;
     margin-bottom: 50px;
   }
-  /*html4*/
-  .titulo4 {
-    font-size: 200%;
-    margin-bottom: 50px;
-    margin-top: 40px;
-  }
-  .row {
-    margin-left: 150px;
-    gap: 20px;
-  }
-  .row .imagenPropiedades {
-    width: 400px;
-    height: 400px;
-  }
 }
 /*cel 500px*/
 @media screen and (max-width: 500px) {
@@ -420,7 +392,7 @@ a {
     display: flex;
     justify-content: flex-start;
   }
-  /*html1 y 5*/
+  /*html1 y 4*/
   header {
     height: 80px;
   }
@@ -460,20 +432,6 @@ a {
   }
   .sectionHome2 {
     width: 300px;
-  }
-  /*html4*/
-  .titulo4 {
-    font-size: 180%;
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
-  .row {
-    margin-left: 60px;
-    gap: 20px;
-  }
-  .row .imagenPropiedades {
-    width: 350px;
-    height: 350px;
   }
 }
 
