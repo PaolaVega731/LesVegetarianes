@@ -95,6 +95,7 @@ textarea {
 }
 
 footer {
+  color: rgb(33, 33, 102);
   padding-top: 10px;
   margin: 0 auto;
   margin-top: 10px;
@@ -280,7 +281,7 @@ a {
 
 .frutosSecos {
   width: 50%;
-  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 
@@ -289,36 +290,17 @@ a {
 }
 
 /*html 4 alimentos y sus propiedades*/
-.paginaGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "titulo" "imagen" "footer";
-}
-.paginaGrid .headerGrid {
-  grid-area: header;
-  font-size: 28px;
-  padding-bottom: 60px;
-}
-.paginaGrid .titulo4 {
-  grid-area: titulo;
+.titulo4 {
   text-align: center;
   color: brown;
-  font-size: 300%;
+  font-size: 800%;
   margin-bottom: 80px;
   margin-top: 50px;
 }
-.paginaGrid .grid-container {
-  grid-area: imagen;
-}
-.paginaGrid .grid-container .imagenPropiedades {
-  width: 400px;
-  height: 400px;
-  border-radius: 20px;
-}
-.paginaGrid .footerGrid {
-  margin-top: 80px;
-  grid-area: footer;
-  font-size: 25px;
+
+.imagenPropiedades {
+  display: inline-block;
+  width: 33.33%;
 }
 
 /* html tablet 768px*/
@@ -387,30 +369,21 @@ a {
   /*html3*/
   .frutosSecos {
     width: 350px;
+    margin-bottom: 50px;
   }
   /*html4*/
-  .paginaGrid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "header" "titulo" "imagen" "footer";
-  }
-  .paginaGrid.headerGrid {
-    font-size: 20px;
-  }
   .titulo4 {
     font-size: 200%;
     margin-bottom: 50px;
     margin-top: 40px;
   }
-  .grid-container {
-    width: 400px;
-    margin: 0 auto;
-  }
-  .grid-container .espaciogap {
+  .row {
+    margin-left: 150px;
     gap: 20px;
   }
-  .footerGrid {
-    font-size: 18px;
-    margin-top: 40px;
+  .row .imagenPropiedades {
+    width: 400px;
+    height: 400px;
   }
 }
 /*cel 500px*/
@@ -483,34 +456,24 @@ a {
   }
   /*html3*/
   .frutosSecos {
-    width: 250px;
+    width: 350px;
   }
   .sectionHome2 {
     width: 300px;
   }
   /*html4*/
-  .paginaGrid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "titulo" "imagen" "footer";
-  }
-  .paginaGrid .headerGrid {
-    font-size: 18px;
-    padding-bottom: 40px;
-  }
   .titulo4 {
     font-size: 180%;
     margin-bottom: 40px;
     margin-top: 30px;
   }
-  .grid-container {
-    grid-template-columns: 1fr;
+  .row {
+    margin-left: 60px;
+    gap: 20px;
   }
-  .grid-container.imagenPropiedades {
-    width: 300px;
-    height: 300px;
-  }
-  .footerGrid {
-    font-size: 18px;
+  .row .imagenPropiedades {
+    width: 350px;
+    height: 350px;
   }
 }
 
