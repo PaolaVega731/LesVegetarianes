@@ -106,6 +106,7 @@ footer {
   text-align: center;
 }
 footer p {
+  font-size: 20px;
   margin-bottom: 0;
   margin-top: 10px;
   font-weight: bold;
@@ -271,13 +272,14 @@ a {
 }
 .boxBeneficios .subtitulo1 {
   font-size: 25px;
+  color: brown;
 }
 
 /*html 3 alimentos que no pueden faltar*/
 .titleAlimentos {
   color: brown;
   margin-bottom: 10%;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .noPuedeFaltar {
@@ -309,13 +311,13 @@ a {
 }
 
 .imagenes {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
 }
 .imagenes .imagenPropiedades {
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  margin-left: 100px;
   margin-top: 60px;
   margin-bottom: 100px;
 }
@@ -514,6 +516,9 @@ a {
   }
   .imagenes .imagenPropiedades {
     width: 350px;
+  }
+  .titleAlimentos {
+    font-size: 25px;
   }
 }
 
