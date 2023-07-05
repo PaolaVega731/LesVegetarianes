@@ -95,7 +95,7 @@ textarea {
 }
 
 footer {
-  color: rgb(33, 33, 102);
+  color: brown;
   padding-top: 10px;
   margin: 0 auto;
   margin-top: 10px;
@@ -104,12 +104,14 @@ footer {
 footer p {
   margin-bottom: 0;
   margin-top: 10px;
+  font-weight: bold;
 }
 footer .redes-sociales {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: bold;
 }
 footer .redes-sociales li {
   display: inline-block;
@@ -382,9 +384,40 @@ a {
     width: 350px;
     margin-bottom: 50px;
   }
+  /*html 6 Propiedades*/
+  .titulo6 {
+    margin-left: auto;
+  }
+  .imagenes {
+    display: flex;
+    justify-content: center;
+  }
+  .imagenes .imagenPropiedades {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 /*cel 500px*/
 @media screen and (max-width: 500px) {
+  .nav-link {
+    color: black;
+  }
+  .nav.nav-tabs {
+    flex-direction: column;
+  }
+  header {
+    background-color: rgb(232, 232, 170);
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin-top: 40px;
+  }
   /*html*/
   .logo {
     width: 80px;
@@ -457,6 +490,26 @@ a {
   }
   .sectionHome2 {
     width: 300px;
+  }
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .imagenes .imagenPropiedades {
+    width: 400px;
+    height: 400px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 412px) {
+  .titulo6 {
+    margin-left: 70px;
+  }
+  .imagenes .imagenPropiedades {
+    width: 350px;
   }
 }
 
