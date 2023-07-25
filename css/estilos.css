@@ -48,7 +48,7 @@
   animation-delay: 2s;
 }
 
-/* html cocina vegetariana */
+/* index */
 body {
   margin: 0;
   padding: 0;
@@ -190,7 +190,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* html 1 y 4 recetas*/
+/* recetas*/
 .tipografia {
   font-family: "Merriweather", serif;
   text-align: center;
@@ -250,14 +250,14 @@ a {
   width: 300px;
 }
 
-/* html 2 beneficios*/
+/* beneficios*/
 .tituloBolsa {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.tituloBolsa .beneficios {
+.tituloBolsa{
   font-size: 40px;
   color: brown;
 }
@@ -270,17 +270,16 @@ a {
   margin-left: 10%;
   margin-right: 10%;
 }
-.boxBeneficios .subtitulo1 {
+.boxBeneficios{
+  font-size: 20px;
+  color:black;
+}
+.subtitulo1{
   font-size: 25px;
   color: brown;
 }
 
-/*html 3 alimentos que no pueden faltar*/
-.titleAlimentos {
-  color: brown;
-  margin-bottom: 10%;
-  font-size: 40px;
-}
+/*alimentos*/
 
 .noPuedeFaltar {
   text-align: left;
@@ -289,16 +288,17 @@ a {
 
 .frutosSecos {
   width: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
  
 
-/*Html 6 Propiedades*/
-.titulo6 {
+/*Propiedades*/
+.title {
   color: brown;
-  font-size: 30px;
+  font-size: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,10 +319,24 @@ a {
   margin-top: 60px;
   margin-bottom: 100px;
 }
+/*productos*/
+
+#productos .contenedorProductos{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:20px
+  
+}
+.contenedorProductos{
+  margin-top: 80px;
+  margin-left: 150px;
+}
+
 
 /* html tablet 768px*/
 @media screen and (max-width: 768px) {
-  /*html*/
+  /*index*/
   .logo {
     width: 110px;
     height: 110px;
@@ -337,7 +351,7 @@ a {
   .contenidoHome .textInfo {
     padding: 20px;
   }
-  /*html1 y 4*/
+  /*Recetas*/
   .sopaContenedor {
     margin-right: 5px;
     margin-left: 0;
@@ -383,13 +397,13 @@ a {
   .tipografia {
     margin-bottom: 20px;
   }
-  /*html3*/
+  /*alimentos*/
   .frutosSecos {
     width: 350px;
     margin-bottom: 50px;
   }
-  /*html 6 Propiedades*/
-  .titulo6 {
+  /*Propiedades*/
+  .title {
     margin-left: auto;
   }
   .imagenes {
@@ -422,7 +436,7 @@ a {
     letter-spacing: 3px;
     margin-top: 40px;
   }
-  /*html*/
+  /*index*/
   .logo {
     width: 80px;
     height: 80px;
@@ -454,7 +468,7 @@ a {
     display: flex;
     justify-content: flex-start;
   }
-  /*html1 y 5*/
+  /*recetas*/
   header {
     height: 80px;
   }
@@ -480,7 +494,7 @@ a {
   .tipografia {
     margin: 0 auto;
   }
-  /*html2*/
+  /*beneficios*/
   .tituloBolsa {
     flex-direction: column-reverse;
     margin-bottom: 40px;
@@ -488,7 +502,7 @@ a {
   .tituloBolsa .beneficios {
     font-size: 30px;
   }
-  /*html3*/
+  /*alimentos*/
   .frutosSecos {
     width: 350px;
   }
@@ -509,13 +523,13 @@ a {
   }
 }
 @media screen and (max-width: 412px) {
-  .titulo6 {
+  .title {
     margin-left: 70px;
   }
   .imagenes .imagenPropiedades {
     width: 350px;
   }
-  .titleAlimentos {
+  .title{
     font-size: 25px;
   }
 }
