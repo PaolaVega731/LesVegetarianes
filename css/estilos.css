@@ -332,8 +332,116 @@ a {
   margin-top: 80px;
   margin-left: 150px;
 }
+.producto-imagen{
+  max-width: 100%;
+  border-radius: 10px;
 
+}
+.producto-detalles{
+  padding: 20px;
 
+}
+.producto-titulo{
+  font-size: 20px;
+}
+.producto-precio{
+  font-size: 25px ;
+}
+.producto-agregar{
+  border: 0;
+  background-color: beige;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 2s,color .2s;
+}
+.producto-agregar:hover{
+  background-color: rgb(107, 181, 181);
+}
+
+/*Carrito*/
+
+.contenedor-carrito{
+  display: flex;
+  flex-direction:column ;
+  gap: 15px;
+}
+.carrito-vacio,
+.carrito-comprado{
+  color: brown;
+  
+}
+.carrito-productos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.carrito-producto-imagen{
+  width: 20px;
+  border-radius: 20px;
+
+}
+.carrito-producto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 20px;
+  padding-right: 15px;
+  border-radius: 15px;
+}
+.carrito-producto small{
+  font-size: 10px;
+
+}
+.carrito-producto-eliminar{
+  border: 0;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+.carrito-acciones{
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-acciones-vaciar{
+  border: 0;
+  background-color:rgb(134, 153, 153);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.carrito-acciones-derecha{
+  display: flex;
+
+}
+.carrito-acciones-total{
+  display: flex;
+  background-color: rgb(128, 158, 158);
+  padding: 10px;
+  color:white;
+  text-transform: uppercase;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  gap: 10px;
+}
+.carrito-acciones-comprar{
+  border: 0;
+  background-color:bisque;
+  padding: 10px;
+  border-radius: 10px;
+  color:brown;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top-right-radius:  10px;
+  border-bottom-right-radius: 10px;
+}
+.ocultar{
+  display: none;
+}
 /* html tablet 768px*/
 @media screen and (max-width: 768px) {
   /*index*/
