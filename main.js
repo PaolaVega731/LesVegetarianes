@@ -121,7 +121,7 @@ const productosArray = [
 ]
 
 const contenedorProductos = document.querySelector("#contendedor-productos");
-
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
 function cargarProductos(){
     productos.forEach(producto => {
         const div = document.createElement("div");
@@ -137,6 +137,43 @@ function cargarProductos(){
       contenedorProductos.append(div);
        
     });
+    actualizarBotonesAgregar();
+    
 }
+ cargarProductos();
  
-cargarProductos();
+ function actualizarBotonesAgregar(){
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+
+    });
+ }
+ let productosEnCarrito;
+
+ const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+ 
+ if(productosEnCarritoLS) {
+   productosEnCarrito = productosEnCarritoLS;
+ } else{
+    productosEnCarrito = [];
+
+ }
+
+ function agregarAlCarrito(e){
+
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    if(productosEnCarrito.some(producto => producto.id === idBoton)){
+       const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+       productosEnCarrito[index].cantidad++;
+
+    }else {
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
+    }
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+ }
+
+
+     
