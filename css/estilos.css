@@ -108,7 +108,7 @@ footer {
 footer p {
   font-size: 20px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: bold;
 }
 footer .redes-sociales {
@@ -321,10 +321,10 @@ a {
 }
 /*productos*/
 
-#productos .contenedorProductos{
+#contenedorProductos .producto{
   
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 3fr);
   grid-gap:20px
   
 }
@@ -441,6 +441,8 @@ a {
 }
 .ocultar{
   display: none;
+
+  
 }
 /* html tablet 768px*/
 @media screen and (max-width: 768px) {
@@ -633,13 +635,12 @@ a {
 @media screen and (max-width: 412px) {
   .title {
     margin-left: 70px;
+    font-size: 25px;
   }
   .imagenes .imagenPropiedades {
     width: 350px;
   }
-  .title{
-    font-size: 25px;
-  }
+  
 }
 
 /*# sourceMappingURL=estilos.css.map */
