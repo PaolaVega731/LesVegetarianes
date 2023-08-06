@@ -1,22 +1,22 @@
 let productos = [
-  { nombre: "Aceite de coco", precio: $250 },
-  { nombre: "MAnteca de coco", precio: $440 },
-  { nombre: "Crema de caju", precio: $410 },
-  { nombre: "Leche de almendras", precio: $55},
-  { nombre: "Yogurt griego", precio: $330},
+  { nombre: "Aceite de coco", precio: 250 },
+  { nombre: "Manteca de coco", precio: 440 },
+  { nombre: "Crema de caju", precio: 410 },
+  { nombre: "Leche de almendras", precio: 55},
+  { nombre: "Yogurt griego", precio: 330},
 ];
 
 const mostrarProductos = () => {
-  console.log("PRODUCTOS DISPONIBLES:");
+  alert("PRODUCTOS DISPONIBLES:");
   for (let i = 0; i < productos.length; i++) {
-    console.log(`${i + 1}. ${productos[i].nombre} - $${productos[i].precio}`);
+    alert(`${i + 1}. ${productos[i].nombre} - $${productos[i].precio}`);
   }
 };
 
 const agregarProducto = (carrito, opcion) => {
   let producto = productos[opcion - 1];
   carrito.push(producto);
-  console.log(`El producto '${producto.nombre}' ha sido agregado al carrito.`);
+  alert(`El producto '${producto.nombre}' ha sido agregado al carrito.`);
 };
 
 const calcularTotal = carrito => {
@@ -27,26 +27,26 @@ const calcularTotal = carrito => {
   return total;
 };
 
-const imprimirCarrito = carrito => {
-  console.log("CARRITO DE COMPRAS:");
-  carrito.forEach((producto, index) => {
-    console.log(`${index + 1}. ${producto.nombre} - $${producto.precio}`);
-  });
-  console.log(`TOTAL: $${calcularTotal(carrito)}`);
-};
+function mostrarCarrito(){
+  if(carrito.length !==0){
+    alert("CARRITO DE COMPRAS:");
+    carrito.forEach((producto, index) => {
+    alert(`${index + 1}. ${producto.nombre} - $${producto.precio}`);
+    });
+    alert(`TOTAL:$${calcularTotal(carrito)}`);
+  } else{
+    alert('Usted no tiene productos en su carrito')
+  }
+}
+    
 
 let carrito = [];
 
-console.log("BIENVENIDO A LES VEGETARIANES");
+alert("BIENVENIDO A LES VEGETARIANES");
 
 while (true) {
-  console.log("\nMENU:");
-  console.log("1. Mostrar productos");
-  console.log("2. Agregar producto al carrito");
-  console.log("3. Ver carrito");
-  console.log("4. Salir");
-
-  const opcion = parseInt(prompt("Seleccione una opción:"));
+ 
+ const opcion = parseInt(prompt("\nMENU: 1. Mostrar productos 2. Agregar producto al carrito 3. Ver carrito  4. Comprar  Seleccione una opción:"));
 
   switch (opcion) {
     case 1:
@@ -55,23 +55,23 @@ while (true) {
     case 2:
       mostrarProductos();
       const productoSeleccionado = parseInt(prompt("Seleccione un producto:"));
-      
+
       // Verificar si el producto ya está en el carrito
         if (carrito.find(producto => producto.nombre === productos[productoSeleccionado - 1].nombre)) {
-        console.log(`El producto '${productos[productoSeleccionado - 1].nombre}' ya está en el carrito.`);
+        alert(`El producto '${productos[productoSeleccionado - 1].nombre}' ya está en el carrito.`);
       } else {
         agregarProducto(carrito, productoSeleccionado);
       }
         break;
      case 3:
-      imprimirCarrito(carrito);
+      mostrarCarrito(carrito);
       break;
     case 4:
-      console.log("Gracias por su compra. ¡Vuelva pronto!");
+      alert("Gracias por su compra. ¡Vuelva pronto!");
       process.exit(0);
       break;
     default:
-      console.log("Opción inválida. Por favor seleccione una opción válida.");
+      alert("Opción inválida. Por favor seleccione una opción válida.");
       break;
   }
 }
