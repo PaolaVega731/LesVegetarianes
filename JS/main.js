@@ -1,4 +1,3 @@
-//Alerta en index
 
 const btnReceta = document.getElementById("btnReceta")
 
@@ -8,3 +7,5 @@ btnReceta.addEventListener("click", (e) => {
 
     alert("Gracias por compartir tu receta ❤️ "  )
 })
+
+ 
