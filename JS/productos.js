@@ -71,20 +71,19 @@ function agregarAlCarrito(e) {
       productoAgregado.cantidad = 1;
       productosEnCarrito.push(productoAgregado);
     }
-
+    cargarProductosCarrito()
     // Guardar el carrito actualizado en el almacenamiento local
     guardarCarritoEnLocalStorage(productosEnCarrito);
   } else {
     console.error("Producto no encontrado en productosArray.");
   }
 }
-function vaciarCarrito() {
-  productosEnCarrito = []; 
-  guardarCarritoEnLocalStorage(productosEnCarrito); 
-}
-
-const botonVaciarCarrito = document.getElementById("vaciar-carrito");
-botonVaciarCarrito.addEventListener("click", () => {
-  vaciarCarrito();
- console.log (botonVaciarCarrito)
+document.addEventListener("DOMContentLoaded", function() {
+  const botonVaciarCarrito = document.getElementById("vaciar-carrito");
+  botonVaciarCarrito.addEventListener("click", () => {
+    vaciarCarrito();
+    console.log(botonVaciarCarrito);
+    
+  });
 });
+
