@@ -112,15 +112,13 @@ const agregarFooter = () => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const btnVaciar = document.getElementById('vaciar-carrito')
+    const btnVaciar = document.getElementById('vaciar-carrito')
+     
     btnVaciar.addEventListener('click' , () => {
         carrito = {}
+        alert("Gracias por su compra")
         agregarCarrito()
     })
-    });
-    
-    
 }
 
 const btnAccion = e => {
