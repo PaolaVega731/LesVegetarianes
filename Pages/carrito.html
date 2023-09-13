@@ -78,7 +78,9 @@
             <td>18</td>
             
             <td>
-              <button class="btn btn-danger btn-sm" id="vaciar-carrito">Comprar</button>
+              
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalPago"id="vaciar-carrito">Comprar</button>
+
             </td>
             <td class="font-weight-bold">$<span>5000</span></td>
           </template>
@@ -110,12 +112,25 @@
                   </div>
                   <button class="btn btn-dark">Comprar</button>
                 </div>
+                
               </div>
             </div>
-          </template>
-          
-          
-                 
+          </template>  <!-- Modal -->
+          <div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Seleccione su método de pago</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label id="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <button class="btn btn-primary">PayPal</button>
+                  <button class="btn btn-success">Mercado Pago</button>
+                  <button class="btn btn-info">Tarjeta de Crédito</button>
+                </div>
+              </div>
+            </div>
+          </div>     
       </main>
       <footer>
         <p>Les invito a que me sigan en mis redes sociales</p>
@@ -126,5 +141,6 @@
         </ul>
       </footer>
    <script src="../JS/carrito.js"></script>
+   
 </body>
 </html>

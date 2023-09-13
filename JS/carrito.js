@@ -30,12 +30,12 @@ const fetchData = async () => {
         // console.log(data)
         agregarCards(data)
     } catch (error) {
-        console.log (error)
+        console.error (error)
     }
 }
 
 const agregarCards = data => {
-    data.forEach(producto => {
+    data.map(producto => {
         templateCard.querySelector('h5').textContent = producto.titulo
         templateCard.querySelector('p').textContent = producto.precio
         templateCard.querySelector('img').setAttribute("src",producto.imagen)
@@ -75,7 +75,7 @@ const setCarrito = objeto => {
 const agregarCarrito = ()=> {
     // console.log(carrito)
     items.innerHTML = ''
-    Object.values(carrito).forEach(producto => {
+    Object.values(carrito).map(producto => {
         templateCarrito.querySelector('th').textContent = producto.id 
         templateCarrito.querySelectorAll('td')[0].textContent = producto.titulo
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
@@ -116,7 +116,7 @@ const agregarFooter = () => {
      
     btnVaciar.addEventListener('click' , () => {
         carrito = {}
-        alert("Gracias por su compra")
+        // alert("Gracias por su compra")
         agregarCarrito()
     })
 }
@@ -141,3 +141,4 @@ const btnAccion = e => {
 }
     e.stopPropagation()
 }
+
