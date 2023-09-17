@@ -14,6 +14,7 @@
         <title>Carrito de compras</title>
         <link rel="icon" href="../Fotos/Logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <meta name="description" content=" Recetas vegetarianas faciles de preparar">
         <meta name="keywords" content="recetas, vegetarianas, veganas, sencillas de preparar, propiedades, vitaminas, hierro, salud, beneficios">
     </head>
@@ -40,19 +41,34 @@
             <a class="nav-link" href="./propiedades.html">Propiedades</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link disabled" href="./carrito.html">Carrito <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
               <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
             </svg></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./productos.html">Productos</a>
           </li>
         </ul>
       </header>
       <main>
           <h1 class="title">Carrito de compras <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-          </svg></h1>           
+          </svg></h1>   
+          <!-- <template id="template-card">
+            <div class="col-6 mb-2 col-md-2">
+                <div class="card">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5>titulo</h5>
+                        <div class="d-flex gap-1">
+                            <span>$</span>
+                            <p>precio</p>
+                        </div>
+                        <button class="btn btn-dark">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </template>     -->
                 <div class="container">
                 <table class="table">
                     <thead>
@@ -72,6 +88,9 @@
                     </tfoot>
                 </table>
             </div>
+            <div class="container">
+              <div class="row" id="cards"></div>
+          </div>
             <template id="template-footer">
                 <th scope="row" colspan="2">Total productos</th>
                 <td>18</td>
@@ -107,6 +126,8 @@
         </ul>
       </footer>
    <script src="../JS/carrito.js"></script>
+   <script src="../JS/productos.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    
 </body>
 </html>
