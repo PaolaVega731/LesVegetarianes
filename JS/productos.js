@@ -25,9 +25,9 @@ cards.addEventListener('click', (e) => {
 });
 
 const addCarrito = (e) => {
-     console.log(e.target)
-    // console.log(e.target.classList.contains('btn-dark'))
+   
     if (e.target.classList.contains('btn-dark')) {
+        console.log(e.target.parentElement)
         setCarrito(e.target.parentElement);
     }
     e.stopPropagation();
@@ -66,6 +66,13 @@ const setCarrito = (objeto) => {
     }
     carrito[producto.id] = { ...producto };
     agregarCarrito();
+    Swal.fire({
+      position: 'top-center',
+      icon: 'success',
+      title: 'Producto agregado al carrito',
+      showConfirmButton: false,
+      timer: 1500
+    });
 };
 
 const agregarCarrito = () => {
@@ -78,5 +85,5 @@ const agregarCarrito = () => {
     // Guarda el nuevo carrito en localStorage
     localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
 
-    console.log(nuevoCarrito);
+  
 };
