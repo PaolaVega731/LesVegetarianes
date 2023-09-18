@@ -2,7 +2,7 @@
     { "id": 0, "titulo": "Aceite de coco", "imagen": "../Fotos/Aceite de coco.png", "precio": 250 },
     { "id": 1, "titulo": "Crema de cajú", "imagen": "../Fotos/Crema de Cajú.png", "precio": 410 },
     { "id": 2, "titulo": "Manteca de coco", "imagen": "../Fotos/Manteca de coco.png", "precio": 440 },
-    { "id": 3, "titulo": "Leche de almendras", "imagen": "../Fotos/Leche de almendras.png", "precio": 55 },
+    { "id": 3, "titulo": "Kombucha", "imagen": "../Fotos/Kombucha.png", "precio": 150 }, 
     { "id": 4, "titulo": "Yogurt griego", "imagen": "../Fotos/Yogurt griego.png", "precio": 330 },
     { "id": 5, "titulo": "Tofú", "imagen": "../Fotos/Tofu.png", "precio": 310 },
     { "id": 6, "titulo": "Vegan pizza", "imagen": "../Fotos/Vegan pizza.png", "precio": 380 },
@@ -16,5 +16,5 @@
     { "id": 14, "titulo": "Nuggets vegetales", "imagen": "../Fotos/Nuggets vegetales.png", "precio": 245 },
     { "id": 15, "titulo": "Proteína vegetal", "imagen": "../Fotos/Proteína vegetal.png", "precio": 200 },
     { "id": 16, "titulo": "Muzzarella en bloque", "imagen": "../Fotos/Muzzarella en bloque.png", "precio": 430 },
-    { "id": 17, "titulo": "Kombucha", "imagen": "../Fotos/Kombucha.png", "precio": 150 }
+    { "id": 17, "titulo": "Leche de almendras", "imagen": "../Fotos/Leche de almendras.png", "precio": 55 }
 ]
